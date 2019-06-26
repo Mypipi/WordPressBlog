@@ -385,6 +385,8 @@ if(xb.copy) document.body.oncopy=function(){alert('已复制所选内容。请�
 window.onload = function(){
     var now = new Date().getTime();
     var page_load_time = now-performance.timing.navigationStart;
-    //console.clear();
+  	//console.clear();
+  	console.log('哎呦，大兄弟你打开了什么？是不是想干什么坏事？想干就干吧！我阻止不了你。。手动滑稽');
+    //console.log('%cwww.fczbl.vip','font-size:2em'); 
     console.log('%c页面加载完毕消耗了'+Math.round(performance.now()*100)/100+'ms','background:#fff;color:#333;text-shadow:0 0 2px #eee,0 0 3px #eee,0 0 3px #eee,0 0 2px #eee,0 0 3px #eee;');
 };
