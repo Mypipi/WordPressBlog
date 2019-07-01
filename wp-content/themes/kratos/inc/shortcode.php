@@ -207,6 +207,7 @@ function more_button_a(){
    }
 }
 add_action('init','more_button_b');
+
 function more_button_b(){
    if(!current_user_can('edit_posts')&&!current_user_can('edit_pages')) return;
    if(get_user_option('rich_editing')=='true'){
@@ -300,6 +301,7 @@ function appthemes_add_quicktags(){ ?>
 try{
 QTags.addButton( 'pre', 'pre', '<pre>\n', '\n</pre>' );
 QTags.addButton( 'hr', 'hr', '\n\n<hr />\n\n', '' );
+QTags.addButton( 'div', 'div', '<div style="text-indent:2em">', '</div>' );
 QTags.addButton( '<?php _e('代码高亮','moedog'); ?>', '<?php _e('代码高亮','moedog'); ?>', '<pre class="hl"><code class="">', '</code></pre>' );
 QTags.addButton( '<?php _e('内容标题','moedog'); ?>', '<?php _e('内容标题','moedog'); ?>', '[title]', '[/title]' );
 QTags.addButton( '<?php _e('蓝色字体','moedog'); ?>', '<?php _e('蓝色字体','moedog'); ?>', '<span style="color: #0000ff;">', '</span>' );
